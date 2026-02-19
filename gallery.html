@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="gallery.css" />
+    <title>Gallery | BOND</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">BOND</div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="friends.html">Friends List</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <section class="gallery-wrap">
+      <div class="gallery-header">
+        <h1>Moments we'll keep.</h1>
+        <p>A collection of memories from Class 10.</p>
+      </div>
+
+      <div class="gallery-container">
+        <div class="photo-card">
+          <img src="assests/images/icons/pic1.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card tall">
+          <img src="assests/images/icons/pic9.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card wide">
+          <img src="assests/images/icons/pic3.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card wide">
+          <img src="assests/images/icons/pic2.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card">
+          <img src="assests/images/icons/pic4.JPG" alt="Memory" />
+        </div>
+        <div class="photo-card">
+          <img src="assests/images/icons/pic5.JPG" alt="Memory" />
+        </div>
+        <div class="photo-card tall">
+          <img src="assests/images/icons/pic8.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card tall">
+          <img src="assests/images/icons/pic12.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card wide">
+          <img src="assests/images/icons/pic5.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card wide">
+          <img src="assests/images/icons/pic6.JPG" alt="Memory" />
+        </div>
+        <div class="photo-card wide">
+          <img src="assests/images/icons/pic7.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card tall">
+          <img src="assests/images/icons/pic13.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card">
+          <img src="assests/images/icons/pic14.JPG" alt="Memory" />
+        </div>
+        <div class="photo-card">
+          <img src="assests/images/icons/pic11.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card tall">
+          <img src="assests/images/icons/pic16.JPG" alt="Memory" />
+        </div>
+        <div class="photo-card wide">
+          <img src="assests/images/icons/pic15.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card">
+          <img src="assests/images/icons/pic1.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card">
+          <img src="assests/images/icons/pic2.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card wide">
+          <img src="assests/images/icons/pic3.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card tall">
+          <img src="assests/images/icons/pic4.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card">
+          <img src="assests/images/icons/pic5.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card wide">
+          <img src="assests/images/icons/pic6.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card">
+          <img src="assests/images/icons/pic7.JPG" alt="Memory" />
+        </div>
+
+        <div class="photo-card tall">
+          <img src="assests/images/icons/pic8.JPG" alt="Memory" />
+        </div>
+      </div>
+
+      <div class="gallery-closing">
+        <h2>Cherish Every Moment</h2>
+        <p>
+          These are the moments that define us. From laughter-filled corridors
+          to unforgettable adventures, every memory here tells a story of
+          friendship, growth, and the bonds we've built together. Class 10
+          wasn't just about studies—it was about creating moments we'll treasure
+          forever. Here's to the people who made it special. ✨
+          More photos will be added in future.You can request me that via insta link on Home Page
+        </p>
+      </div>
+    </section>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+          hamburger.classList.remove("active");
+        });
+      });
+
+      document.addEventListener("click", (e) => {
+        if (
+          !e.target.closest(".navbar") &&
+          navLinks.classList.contains("active")
+        ) {
+          navLinks.classList.remove("active");
+          hamburger.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends List | BOND</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="friends.css" />
+  </head>
+  <body class="friends-page">
+    <header class="navbar">
+      <div class="logo">BOND</div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="friends.html">Friends List</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+
+      
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <section class="friends-section">
+      <h1 class="section-title">Our Class Friends</h1>
+      <p class="friends-subtitle">Meet the amazing people who made class 10 unforgettable(Sorry sabaiko xaina ahile bistarai add garxu)</p>
+
+      <div class="friends-grid">
+        <div class="friend-card">
+          <h2 class="friend-name">AYUSH KHANAL</h2>
+          <p class="friend-des">The creator of this site. A coding enthusiast and study lover.</p>
+          <div class="hobbies">
+            <span>Coding</span>
+            <span>Studying</span>
+            <span>English Songs</span>
+          </div>
+        </div>
+
+        <div class="friend-card">
+          <h2 class="friend-name">Abhay Singh</h2>
+          <p class="friend-des">Silent but strong. A chess player and dedicated worker.</p>
+          <div class="hobbies">
+            <span>Chess</span>
+            <span>Hardworking</span>
+            <span>Gaming</span>
+          </div>
+        </div>
+
+        <div class="friend-card">
+          <h2 class="friend-name">Bhisan Rai</h2>
+          <p class="friend-des">The funny guy. Always calm and friendly with great vibes.</p>
+          <div class="hobbies">
+            <span>Friendly</span>
+            <span>Gaming</span>
+            <span>Fun Times</span>
+          </div>
+        </div>
+
+        <div class="friend-card">
+          <h2 class="friend-name">Bibek Rai</h2>
+          <p class="friend-des">Disciplined when it matters. A karate enthusiast and gamer.</p>
+          <div class="hobbies">
+            <span>Karate</span>
+            <span>Discipline</span>
+            <span>Gaming</span>
+          </div>
+        </div>
+
+        <div class="friend-card">
+          <h2 class="friend-name">Himal Rai</h2>
+          <p class="friend-des">The funniest one around. Spreads positive vibes everywhere.</p>
+          <div class="hobbies">
+            <span>Humor</span>
+            <span>Good Vibes</span>
+            <span>Fun</span>
+          </div>
+        </div>
+
+        <div class="friend-card">
+          <h2 class="friend-name">Nirmal Guragain</h2>
+          <p class="friend-des">Strong mindset, positive nature. Hardworking and independent.</p>
+          <div class="hobbies">
+            <span>Mindset</span>
+            <span>Hardworking</span>
+            <span>Independent</span>
+          </div>
+        </div>
+      </div>
+        <div class="friend-card">
+          <h2 class="friend-name">Sagun Rai</h2>
+          <p class="friend-des">Leader of our class who is always there when needed</p>
+          <div class="hobbies">
+            <span>Funny</span>
+            <span>Social</span>
+            <span>Independent</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+          hamburger.classList.remove("active");
+        });
+      });
+
+      document.addEventListener("click", (e) => {
+        if (
+          !e.target.closest(".navbar") &&
+          navLinks.classList.contains("active")
+        ) {
+          navLinks.classList.remove("active");
+          hamburger.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>
+
+        <div class="friend-card">
+          <h2 class="friend-name">AYUSH <span>KHANAL</span></h2>
+          <div class="friend-info">
+            <p class="short-des">
+              Its me who created this website soo what to tell idk
+            </p>
+            <div class="hobbies-list">
+              <span>Coding</span>
+              <span>StudyHolic</span>
+              <span>English Songs😵‍💫🩵</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <div class="friend-card">
+          <h2 class="friend-name">Abhay <span>Singh</span></h2>
+          <div class="friend-info">
+            <p class="short-des">
+            He is fantastic guy who stays silent most of the time. But hardworking and calm
+            </p>
+            <div class="hobbies-list">
+              <span>Chess</span>
+              <span>Hardworking</span>
+              <span>Games🩵</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <div class="friend-card">
+          <h2 class="friend-name">Bhisan <span>Rai</span></h2>
+          <div class="friend-info">
+            <p class="short-des">
+           He is funny Guy A Gameholic. HE stays silent most of the time.. Frinedly Nature..
+            </p>
+            <div class="hobbies-list">
+              <span>Friendly</span>
+              <span>Calm</span>
+              <span>Games🩵</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <div class="friend-card">
+          <h2 class="friend-name">Bibek <span>Rai</span></h2>
+          <div class="friend-info">
+            <p class="short-des">
+           A guy that become serious when exam is near otherwise just talks and hang around town whole day
+            </p>
+            <div class="hobbies-list">
+              <span>Karate</span>
+              <span>Disciplined</span>
+              <span>Games🩵</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <div class="friend-card">
+          <h2 class="friend-name">Himal <span>Rai</span></h2>
+          <div class="friend-info">
+            <p class="short-des">
+          Short boy who knows to talk only... Funniest guy around class
+            </p>
+            <div class="hobbies-list">
+              <span>Short(punte)</span>
+              <span>Funny</span>
+              <span>Good Vibe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <div class="friend-card">
+          <h2 class="friend-name">Nirmal <span>Guragain</span></h2>
+          <div class="friend-info">
+            <p class="short-des">
+          Nice man with positive mindset..often silent and dont give too much reaction..and dont care much what other think(strong mindset)
+            </p>
+            <div class="hobbies-list">
+              <span>Mindet</span>
+              <span>Vibe</span>
+              <span>Hardworking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <div class="friend-card">
+          <h2 class="friend-name">Nischal <span>Rai</span></h2>
+          <div class="friend-info">
+            <p class="short-des"> 
+       Funny Guy who respect toppers but tease others...A fat boy with good personality..
+            </p>
+            <div class="hobbies-list">
+              <span>Game</span>
+              <span>Free Fire</span>
+              <span>Lover❤️</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <div class="friend-card">
+          <h2 class="friend-name">Jenish <span>Niraula</span></h2>
+          <div class="friend-info">
+            <p class="short-des">
+          No words for him.. He will be remembered forever by our class🩵
+            </p>
+            <div class="hobbies-list">
+              <span>Funny</span>
+              <span>No care Mindet</span>
+              <span>Extrovet ProMax</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <div class="friend-card">
+          <h2 class="friend-name">Rojan <span>Thapa</span></h2>
+          <div class="friend-info">
+            <p class="short-des">
+           Funny Personeel who is always competative.. always serious about study..AKA Thape
+            </p>
+            <div class="hobbies-list">
+              <span>Study</span>
+              <span>Funny</span>
+              <span>Silent Killer</span>
+              <span>Always Panic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <div class="friend-card">
+          <h2 class="friend-name">Sagun <span>Bhattarai</span></h2>
+          <div class="friend-info">
+            <p class="short-des">
+          Funny Guy... Who hangout with all..Mediocore student
+            </p>
+            <div class="hobbies-list">
+              <span>Game</span>
+              <span>Funny</span>
+              <span>Calm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <div class="friend-card">
+          <h2 class="friend-name">Sagun <span>Rai</span></h2>
+          <div class="friend-info">
+            <p class="short-des">
+        Don of our class... Leader Minset...Productive,Calm,Disciplined,Hardworking.IN Short Whole School Favourite😮‍💨
+            </p>
+            <div class="hobbies-list">
+              <span>Hardworking</span>
+              <span>Disciplined</span>
+              <span>Chill</span>
+              <span>Enjoys every Moment❤️</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <div class="friend-card">
+          <h2 class="friend-name">Dawa <span>Tamang</span></h2>
+          <div class="friend-info">
+            <p class="short-des">
+      No words for him Most hardworking and Disciplined person in whole class..Silent Killer...Learner Mindset
+            </p>
+            <div class="hobbies-list">
+              <span>Calm</span>
+              <span>Disciplined</span>
+              <span>Strong Mindset🫡</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <div class="friend-card">
+          <h2 class="friend-name">Samyog Enjal  <span>Rai</span></h2>
+          <div class="friend-info">
+            <p class="short-des">
+       Dada of our class which everyone respect and fear... Chill and good Longterm Thinking👏
+            </p>
+            <div class="hobbies-list">
+              <span>Funny</span>
+              <span>Pathetic</span>
+              <span>Games🩵</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <div class="friend-card">
+          <h2 class="friend-name">Success <span>Rai</span></h2>
+          <div class="friend-info">
+            <p class="short-des">
+        Nice guy often lazy, respects everyone,Hardworking in Study
+            </p>
+            <div class="hobbies-list">
+              <span>Calm</span>
+              <span>Disciplined</span>
+              <span>Games🩵</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      
+
+
+
+    </section>
+  </body>
+</html>
